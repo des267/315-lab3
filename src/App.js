@@ -15,6 +15,7 @@ function App() {
       const response = await axios(
           "https://jsonplaceholder.typicode.com/users"
       );
+      console.log(response);
       setMonsters(response.data);
     };
     fetchMonsters();
